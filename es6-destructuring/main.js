@@ -5,12 +5,10 @@ const book1 = {
   libraryID: 3353,
 };
 
-const bookResult = ({ title, author, libraryID }) =>
-  console.log(
-    `The title of the book is ${title}, the author is ${author}, and the library id is ${libraryID}`
-  );
-
-bookResult(book1);
+const { title, author, libraryID } = book1;
+console.log(
+  `The title of the book is ${title}, the author is ${author}, and the library id is ${libraryID}`
+);
 
 const book2 = {
   title: 'Les Fleurs du mal',
@@ -60,5 +58,5 @@ console.log(`Book3:`, book3);
 console.log(`Book4:`, book4);
 console.log(`Book5:`, book5);
 
-const [, book6] = library;
+const [, , , book6] = library;
 console.log(`Book6: `, book6);
