@@ -5,8 +5,9 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is the syntax for writing a template literal?
-
+  `` double backticks
 - What is "string interpolation"?
+  A way to embed variables and expressions in a string to make a dynamic string
 
 ## Notes
 
