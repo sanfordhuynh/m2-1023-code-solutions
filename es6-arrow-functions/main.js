@@ -7,9 +7,7 @@ const book = {
 };
 
 console.log('Exercise 1');
-const doubled = numbers.map((n) => {
-  return n * 2;
-});
+const doubled = numbers.map((n) => n * 2);
 console.log('doubled', doubled);
 
 console.log('\n\nExercise 2');
@@ -27,7 +25,6 @@ const foo = () => {
   console.log("Why doesn't this log???");
 };
 
-foo();
 console.log('foo type:', typeof foo);
 
 console.log('\n\nExercise 4');
