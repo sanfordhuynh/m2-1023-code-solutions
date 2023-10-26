@@ -11,8 +11,10 @@ const v4 = [3, 5, 7, 9];
  * In one expression, log "v2 is truthy" to the console only if `v2` is truthy.
  * Expected: v1 message logs, v2 message does not.
  */
-v1 ? console.log('v1 is truthy') : null;
-v2 ? console.log('v2 is truthy') : null;
+
+v1 && console.log('v1 is truthy');
+v2 && console.log('v2 is truthy');
+
 /* TODO:
  * Demonstrate how to assign a "default value" to a variable.
  * In one expression, assign `'default-value'` to the variable `config1` if v1 is falsy.
@@ -33,9 +35,10 @@ console.log('config2: ', config2);
  * Log `cfg1`, `cfg2`, and `cfg3`.
  * Expected: `config1 = { value: 'Something' }`, `config2 = ''`, `config3 = 'default-value'`.
  */
-const cfg1 = v1 !== undefined ? v1 : 'default-value';
-const cfg2 = v2 !== undefined ? v2 : '';
-const cfg3 = v3 !== undefined ? v3 : 'default-value';
+
+const cfg1 = v1 ?? 'default-value';
+const cfg2 = v2 ?? 'default-value';
+const cfg3 = v3 ?? 'default-value';
 
 console.log('cfg1: ', cfg1);
 console.log('cfg2: ', cfg2);
@@ -64,9 +67,9 @@ console.log('tern2: ', tern2);
  * Log `oc1`, `oc2`, and `oc3`.
  * Expected: `oc1 = 'Something'`, `oc2 = undefined`, `oc3 = undefined`.
  */
-const oc1 = v1?.value || undefined;
-const oc2 = v2?.value || undefined;
-const oc3 = v3?.value || undefined;
+const oc1 = v1?.value;
+const oc2 = v2?.value;
+const oc3 = v3?.value;
 
 console.log('oct1: ', oc1);
 console.log('oct2: ', oc2);
