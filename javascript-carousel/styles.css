@@ -1,0 +1,28 @@
+.container {
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-one-fourth {
+  flex-basis: 25%;
+}
+
+.column-one-half {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-one-half i {
+  padding: 10px;
+}
+
+.arrow {
+  font-size: 2em;
+}
