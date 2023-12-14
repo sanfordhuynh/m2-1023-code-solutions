@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css'; // Make sure you have the appropriate CSS styles defined
+import './App.css';
 
 const colors = ['black', 'dark', 'magenta', 'red', 'orange', 'yellow', 'white'];
 
